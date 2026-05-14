@@ -251,46 +251,160 @@ section{
 /* ========================================= */
 
 .facilities{
-    background:#eaf2ff;
+
+    background:#0d6efd;
+
+    color:white;
+
+    padding:100px 8%;
+
+}
+
+/* Small Heading */
+
+.facility-small-title{
+
+    text-align:center;
+
+    font-size:18px;
+
+    margin-bottom:10px;
+
+    color:#dbe8ff;
+
+    font-weight:500;
+
+}
+
+/* Main Heading */
+
+.facility-main-title{
+
+    text-align:center;
+
+    font-size:58px;
+
+    margin-bottom:70px;
+
+    font-weight:700;
+
 }
 
 /* Facilities Grid */
-.facility-grid{
-    display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(250px,1fr));
 
-    gap:25px;
+.facility-wrapper{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:45px;
+
 }
 
-/* Facility Card */
-.facility-card{
-    background:#c62828;
-    color:white;
-    padding:20px;
-    border-radius:20px;
-    text-align:center;
-    transition:0.3s;
+/* Individual Item */
+
+.facility-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+}
+
+/* ========================================= */
+/* ICON DESIGN */
+/* ========================================= */
+
+.facility-icon{
+
+    min-width:85px;
+
+    height:85px;
+
+    background:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+}
+
+/* Icon */
+
+.facility-icon i{
+
+    font-size:35px;
+
+    color:#0d6efd;
+
+}
+
+/* Text Content */
+
+.facility-text h3{
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+/* Paragraph */
+
+.facility-text p{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    color:#e6e6e6;
+
 }
 
 /* Hover Effect */
-.facility-card:hover{
-    transform:translateY(-8px);
-    background:#0d6efd;
+
+.facility-item:hover .facility-icon{
+
+    transform:scale(1.08);
+
+    transition:0.3s;
+
 }
 
-/* Facility Images */
-.facility-card img{
-    width:100%;
-    height:200px;
-    object-fit:cover;
-    border-radius:15px;
-    margin-bottom:20px;
-}
+/* ========================================= */
+/* MOBILE RESPONSIVE */
+/* ========================================= */
 
-/* Facility Heading */
-.facility-card h3{
-    margin-bottom:10px;
+@media(max-width:900px){
+
+    .facility-main-title{
+
+        font-size:42px;
+
+    }
+
+    .facility-item{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        text-align:center;
+
+    }
+
 }
 
 /* ========================================= */
