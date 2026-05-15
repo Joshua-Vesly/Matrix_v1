@@ -572,3 +572,211 @@ iframe{
     }
 
 }
+<!-- ================================= -->
+<!-- Gallery Preview in index.html -->
+<!-- ================================= -->
+@media(max-width:900px){
+
+}
+
+/* ========================================= */
+/* GALLERY PREVIEW SECTION */
+/* ========================================= */
+
+.gallery-preview{
+
+    background:#f8f9ff;
+
+    padding:100px 8%;
+
+    text-align:center;
+
+}
+
+/* Small Heading */
+
+.gallery-preview-small{
+
+    color:#0d6efd;
+
+    font-size:18px;
+
+    margin-bottom:10px;
+
+}
+
+/* Main Heading */
+
+.gallery-preview-title{
+
+    font-size:55px;
+
+    color:#b71c1c;
+
+    margin-bottom:60px;
+
+    font-family:'Cinzel', serif;
+
+}
+
+/* ========================================= */
+/* PREVIEW GRID */
+/* ========================================= */
+
+.preview-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:25px;
+
+}
+
+/* Preview Item */
+
+.preview-item{
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+}
+
+/* Images */
+
+.preview-item img{
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:cover;
+
+    transition:0.5s;
+
+}
+
+/* Hover Effect */
+
+.preview-item:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ========================================= */
+/* BUTTON */
+/* ========================================= */
+
+.gallery-btn-container{
+
+    margin-top:50px;
+
+}
+
+/* Button Styling */
+
+.gallery-btn{
+
+    display:inline-block;
+
+    padding:16px 40px;
+
+    background:#0d6efd;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+}
+
+/* Hover Effect */
+
+.gallery-btn:hover{
+
+    background:#b71c1c;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+/* ========================================= */
+/* GALLERY PAGE */
+/* ========================================= */
+
+.gallery-page{
+
+    padding:100px 8%;
+
+    background:#f8f9ff;
+
+}
+
+/* Page Title */
+
+.gallery-page-title{
+
+    text-align:center;
+
+    font-size:60px;
+
+    color:#b71c1c;
+
+    margin-bottom:70px;
+
+    font-family:'Cinzel', serif;
+
+}
+
+/* Gallery Grid */
+
+.gallery-page-container{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+/* Gallery Images */
+
+.gallery-page-container img{
+
+    width:100%;
+
+    height:400px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    transition:0.5s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+}
+
+/* Hover Effect */
+
+.gallery-page-container img:hover{
+
+    transform:scale(1.05);
+
+}
